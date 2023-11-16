@@ -21,7 +21,6 @@
 function getRectangleArea(width, height) {
   return width * height;
 }
-// getRectangleArea(5, 10);
 
 /**
  * Returns a circumference of circle given by radius.
@@ -50,8 +49,8 @@ function getCircleCircumference(radius) {
  *  10, 0  => 5
  *  -3, 3  => 0
  */
-function getAverage(/* value1, value2 */) {
-  throw new Error('Not implemented');
+function getAverage(value1, value2) {
+  return value1 / 2 + value2 / 2;
 }
 
 /**
@@ -69,8 +68,9 @@ function getAverage(/* value1, value2 */) {
  *   (0,0) (1,0)    => 1
  *   (-5,0) (10,-10) => 18.027756377319946
  */
-function getDistanceBetweenPoints(/* x1, y1, x2, y2 */) {
-  throw new Error('Not implemented');
+function getDistanceBetweenPoints(x1, y1, x2, y2) {
+  const resolt = (x1 - x2) ** 2 + (y1 - y2) ** 2;
+  return Math.sqrt(resolt);
 }
 
 /**
